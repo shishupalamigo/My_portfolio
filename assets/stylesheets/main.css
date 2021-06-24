@@ -89,6 +89,7 @@ html {
 	 line-height: 1.4;
 	 color: #fff;
  }
+
  h1,
  h2 {
 	 font-family: "Raleway", sans-serif;
@@ -100,6 +101,7 @@ html {
  }
  h2 {
 	 font-size: 4.2rem;
+	 margin-bottom: 4rem;
  }
  a {
 	 text-decoration: none;
@@ -108,7 +110,7 @@ html {
  img {
 	 display: block;
 	 width: 100%;
- 
+	 /* height: 100%;	 */
 	}
  /* NAV */
 
@@ -154,12 +156,20 @@ html {
 	 width: 100%;
 	 height: 100vh;
 	 background-color: #000; 
-	 background: linear-gradient(120deg, #04250e 25%, #32531b 60%,  #04250e 100%);
+	 background: linear-gradient(120deg, #12a2e6 25%, #7ba35e 60%,  #04250e 100%);
  }
 .profile-img {
 	border-radius: 50%;
-	width: 16em;
-	height: 16em;
+	width: 14em;
+	height: 14em;
+	border: 14px solid rgb(0, 67, 78);
+	box-shadow: 2px 2px 0px 10px rgb(168, 215, 247);
+	transition: 1.5s ease-in-out;
+}
+.profile-img:hover {
+	transform: scale(.7);
+	/* transform: rotate3d(360deg, 360deg); */
+	transform: rotateY(360deg);
 }
 .welcome-section > p {
 	font-size: 3rem;
@@ -224,10 +234,13 @@ html {
 .project-title {
 	font-size: 2rem;
 	padding: 2rem 0.5rem;
+	transition: ease-in-out 2s;
 }
 .project-tile:hover {
-	transform: translateX(8px);
+	transform: scale3d(1.1, 1.1, 1.1);
+	transition: ease-out 2s;
 	background: #100453e5;
+	box-shadow: 10px 10px 10px rgb(34, 34, 34);
 }
 .btn {
 	display: inline-block;
@@ -243,7 +256,7 @@ html {
 	background: #14084d;
 }
 .btn-show-all:hover > i {
-	transform: translateX(2px);
+	transform: translate(1rem);
 	transition: transform 0.3s ease-out;
 }
 .contact-section {
